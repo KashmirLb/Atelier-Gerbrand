@@ -3,9 +3,10 @@ Project created with Next.js, Strapi, MongoDB and Cloudinary.
 Website for an contemporanean art studio: Atelier Gerbrand
 
 My first project written from scratch.
-    Used below imports:
-        https://swiperjs.com/swiper-api
-        https://formspree.io
+
+Used below imports:
+ - https://swiperjs.com/swiper-api
+ - https://formspree.io
 
 The rest of the code was written by the author.
 
