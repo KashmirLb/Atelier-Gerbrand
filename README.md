@@ -16,7 +16,9 @@ WARNING:
  - Site displays art pieces which might contain nudity.
  - The section More Art > Erotic Museum contains some explicit content.
 
- Result (domain to be changed):
+ ## Result:
+  - Domain is to be changed.
+  - Text and pictures are to be updated by the owners.
 
  https://g-atelier-dev.vercel.app/
 
