@@ -1,0 +1,39 @@
+.background{
+    background-color: var(--soft-white);
+}
+
+.content{
+    padding-top:74px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+@media(min-width:450px){
+    @media(min-height:500px){
+        .content{
+            padding-top:160px;
+        }
+    }
+}
+@media(min-width:770px){
+    @media(min-height:500px){
+
+        .content {
+           margin-left:24vw;
+           padding-top:0;
+        }
+    }
+}
+@media(min-width:1350px){
+    .content{
+        margin-left:20vw;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

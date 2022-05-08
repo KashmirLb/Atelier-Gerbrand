@@ -1,0 +1,85 @@
+.itemContainer {
+    height: fit-content;
+    padding:2rem;
+}
+
+.imageContainer img{
+    max-height: 70vh;
+}
+
+.textContainer{
+    padding-top:1rem;
+    max-height: 30vh;
+    height:fit-content;
+}
+
+.textContainer h2{
+    font-family: 'Julius Sans One';
+}
+
+.textContainer h2::after{
+    content:'';
+    display:block;
+    width: 80%;
+    height: 1px;
+    background-color: var(--light-gray)
+}
+
+.textContainer p{
+    display:grid;
+    grid-template-columns: 2fr 8fr;
+    font-family: 'Montserrat';
+    color:var(--gray);
+    line-height: 70%;
+}
+
+.textContainer p span{
+    color:var(--black);
+    font-weight: 700;
+}
+
+.textContainer a{
+    color:var(--red);
+    border-radius: 5px;
+    width: fit-content;
+    transition: .3s all ease-in-out;
+    font-weight: 500;
+    font-size:.9rem;
+}
+
+.textContainer>div{
+    margin-top:20px;
+    width: fit-content;
+}
+
+.textContainer a::after{
+    content:'';
+    height: 1px;
+    background-color: var(--red);
+    display:block;
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0)
+}
+
+.textContainer a:hover::after {
+    transform: scaleX(1)
+}
+
+.separator{
+    display:block;
+    content: '';
+    height:1px;
+    background-color: var(--red);
+    margin-top: 50px;
+}
+
+.available{
+    color: green !important;
+    font-size: .9rem;
+}
+
+.notAvailable{
+    color: var(--red) !important;
+    font-size: .9rem;
+}

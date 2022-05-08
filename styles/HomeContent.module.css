@@ -1,0 +1,119 @@
+.background {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--soft-white);
+    column-gap: 1rem;
+    height: calc(100vh - 74px)
+}
+@media(min-width:450px){
+    .background{
+        height:82vh;
+    }
+}
+@media(min-width:770px){
+    .background{
+        grid-template-columns:2fr 1fr;
+        height: 99vh;
+        column-gap: 1rem;
+    }
+}
+
+.imageContainer{
+    max-height:100%;
+    width: 50vw;
+    position:relative;
+}
+@media(min-width:770px){
+    .imageContainer{
+        height: 100vh;
+        position:relative;
+        grid-column: 1 / 2;
+    }
+}
+
+.doubleContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    position:relative;
+    
+    grid-column: 2 / 3;
+    row-gap: 1rem;
+}
+@media(min-width:770px){
+    .doubleContainer{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 100vh;
+        position:relative;
+        grid-column: 2 / 3;
+        row-gap: 1rem;;
+    }
+}
+
+.smallImage{
+    height: auto;
+    position:relative;
+}
+@media(min-width:770px){
+    .smallImage{
+        height: auto;
+        position:relative; 
+    }
+}
+
+@media(min-width:650px){
+
+    @media(max-width:770px){
+
+        .smallImage::after {
+            grid-column: 1 / 2;
+            content:'';
+            width: 1px;
+            height: 100%;
+            background-color: var(--red);
+            display:block;
+            transform: translateX(+30vw)
+        }
+        .smallImage:first-of-type::after {
+            grid-column: 1 / 2;
+            content:'';
+            width: 1px;
+            height: 100%;
+            background-color: var(--red);
+            display:block;
+            transform: translateX(-50px)
+        }
+        .smallImage:first-of-type {
+            grid-column: 2 / 3;
+            transform: translateX(-3rem)
+        }
+    }
+}
+
+@media(max-height:500px){
+    @media(min-width:450px){
+        .smallImage::after {
+            grid-column: 1 / 2;
+            content:'';
+            width: 1px;
+            height: 100%;
+            background-color: var(--red);
+            display:block;
+            transform: translateX(+30vw)
+        }
+        .smallImage:first-of-type::after {
+            grid-column: 1 / 2;
+            content:'';
+            width: 1px;
+            height: 100%;
+            background-color: var(--red);
+            display:block;
+            transform: translateX(-50px)
+        }
+        .smallImage:first-of-type {
+            grid-column: 2 / 3;
+            transform: translateX(-3rem)
+        }
+    }
+}

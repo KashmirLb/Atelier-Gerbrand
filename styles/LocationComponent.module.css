@@ -1,0 +1,130 @@
+@media(min-width:770px){
+    .locationContainer{
+        padding-left:4rem;
+    }
+}
+
+.locationContainer h1{
+    font-family: 'Julius Sans One';
+    padding-left: 10%;
+}
+@media(min-width:770px){
+    .locationContainer h1{
+        padding-left:0;
+    }
+}
+
+.locationContainer h1::after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray);
+}
+@media(min-width:450px ){
+    .locationContainer h1::after{
+        transform: translateX(-2rem) translateY(5px); 
+    }
+}
+
+.contentContainer {
+    display:block;
+    height: fit-content;
+    padding: .3rem .5rem;
+    
+}
+@media(min-width:580px){
+    .contentContainer{
+        max-width: 800px;
+        padding:3rem;
+        padding-top:.3rem;
+    }
+}
+
+.locationTextBackground{
+    font-size: 1rem;
+}
+
+@media(max-width:450px){
+    .locationTextBackground h2{
+        padding-left: 10%; 
+    }
+}
+
+.locationTextBackground>p{
+    font-family: 'Montserrat';
+    width: 300px;
+    padding-left:2rem;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+@media(max-width:450px){
+    .locationTextBackground>p{
+        padding-left: 20%;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.locationTextBackground>p span{
+    color:var(--dark-red);
+}
+
+.locationText{
+    margin-top:2rem;
+    height: fit-content;
+    padding:2rem;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2px;
+    border:2px solid rgba(191, 0, 0, 0.18);
+    margin-right:0;
+}
+@media(max-width:580px){
+    .locationText{
+        width: 100%;
+    }
+}
+
+.frameContainer{
+    width:100%;
+    height: 40vh;
+    overflow:hidden;
+}
+
+.frame{
+    width: 100%;
+    height: 40vh;
+}
+
+.frame .place-card{
+ position:absolute;
+ transform: scale(0) !important;
+}
+
+.locationText{
+    color: var(--black);
+    font-family: 'Montserrat';
+    font-size: 2rem;
+}
+
+.locationText p {
+    margin-top: 0;
+}
+
+.locationPicture {
+    position:relative;
+    height: 54vh;
+    width: 100%;
+    margin-top:2rem;
+}
+
+.contentContainer>p{
+    padding-top:1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contentContainer>p>a{
+    color:var(--red)
+}

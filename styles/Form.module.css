@@ -1,0 +1,136 @@
+.formContainer{
+    display:block;
+    width: 100%;
+}
+.fieldContainer{
+    padding: 1.3rem;
+    padding-left: 0;
+    max-width: 500px;
+}
+@media(min-width:450px){
+    .fieldContainer{    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left:1.3rem;
+    }
+}
+
+@media(min-width:450px){
+    .fieldContainer::after{
+        content:'';
+        display:block;
+        position:absolute;
+        background-color: var(--light-gray);
+        width: 60vw;
+        max-width: 350px;
+        height: 1px;
+        transform: translateY(1.3rem) scale(1)
+    }
+}
+
+.fieldContainer label{
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+@media(max-width:450px){
+
+    .fieldContainer label, .fieldContainer input{
+        margin-top: 10px;
+    }
+    .fieldContainer label::after{
+        content:'';
+        display:block;
+        position:absolute;
+        background-color: var(--light-gray);
+        width: 60vw;
+        max-width: 350px;
+        height: 1px;
+    }
+}
+
+.fieldContainer input{
+    height: 28px;
+}
+
+.textareaContainer {
+    padding: 1.3rem;
+    padding-left:0;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    color: var(--gray);
+    font-weight: 500;
+    max-width: 500px;
+}
+@media(min-width:450px){
+    .textareaContainer{
+        padding-left:1.3rem;
+    }
+}
+
+.textareaContainer textarea{
+    height: 10rem;
+    width: 100%;
+}
+
+.formContainer button{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 400;
+    display:block;
+    height: 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    transition: .3s all ease-in-out;
+    margin-top:2rem;
+}
+
+.formContainer button:hover{
+    background-color: var(--dark-red);
+}
+
+.messageSent{
+    padding-left:2rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    color: var(--gray)
+}
+
+.messageSent h2{
+    font-size:1.2rem;
+    color:var(--blue);
+    
+}
+
+.messageSent h2::after{
+    background-color: var(--blue);
+}
+
+.messageSent button{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 400;
+    display:block;
+    height: 40px;
+    width: 300px;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    transition: .3s all ease-in-out;
+    margin-top:5rem;
+}
+.messageSent button:hover{
+    background-color: var(--dark-red)
+}
+
+.errorMessage{
+    color: var(--red);
+    font-weight: 700;
+    font-size: 1rem;
+}

@@ -1,0 +1,113 @@
+:root {
+  --red: #e3000b;
+  --dark-red: #BF0000;
+  --blue: #0062FA;
+  --button-white: #FFF5F0;
+  --white: #fff;
+  --soft-white: rgb(255, 249, 244);
+  --gray: #676767;
+  --light-gray: #afafaf;
+  --black: #262626;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: .8rem;
+  background-color: var(--soft-white);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+    font-family: 'Julius Sans One';
+    padding-left: 10%;
+}
+@media(min-width:770px){
+    h1{
+      padding-left:4rem;
+    }
+}
+
+h1::after{
+  content:'';
+  display:block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--black);
+}
+@media(min-width:450px ){
+  h1::after{
+    width: 100%;  
+    transform: translateX(-2rem) translateY(5px); 
+  }
+}
+
+[class*="contentContainer"] {
+    padding-top:1rem;
+    padding-bottom: 50px; 
+}
+@media(min-width:770px){
+  [class*="contentContainer"]{
+        padding-top: 2rem;
+    }
+}
+
+[class*="heading"] {
+  text-align:center;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+[class*="heading"]::after{
+    text-align: center;
+    margin: auto;
+    content:'';
+    width: 80%;
+    height: 1px;
+    background-color: var(--black);
+    display:block;
+}
+
+[class*="wide"] {
+  max-height: 80%;
+}
+
+[class*="swiper-button-next"] {
+  color:var(--white) !important;
+  transition:.3s all ease-in-out !important;
+}
+
+[class*="swiper-button-prev"] {
+  color:var(--white) !important;
+  transition:.3s all ease-in-out !important;
+}
+
+[class*="swiper-button-next"]:hover {
+  color:var(--red) !important;
+  transition:.3s all ease-in-out !important;
+}
+
+[class*="swiper-button-prev"]:hover {
+  color:var(--red) !important;
+  transition:.3s all ease-in-out !important;
+}
+
+[class*="swiper-slide-prev"] {
+  display:hidden;
+}

@@ -1,0 +1,89 @@
+.contactContainer{
+    display:flex;
+    justify-content: center;
+    height: fit-content;
+    padding-left:.5rem;
+}
+@media(min-width:770px){
+    .contactContainer{
+        display:block;
+        padding-left:4rem;
+        min-height: calc(100vh - 60px)
+    }
+}
+
+.itemsContainer{
+    display:block;
+    width: 80%;
+}
+
+.contactContainer h2{
+    margin-top: 4rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    width:fit-content;
+}
+
+.contactContainer h2::after{
+    content:'';
+    display:block;
+    height: 1px;
+    width:100%;
+    background-color: black;
+}
+
+.contactSection{
+    margin:1.3rem;
+    margin-left:0;
+    display:block;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    color: var(--red);
+    font-weight: 500;
+}
+@media(min-width:450px){
+    .contactSection{
+        margin:1.3rem;
+        display:flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-size: 1.3rem;
+        color: var(--red);
+        font-weight: 500;
+    }
+    .contactSection a{
+        display:flex;
+        align-items: center;
+    }
+    .contactSection div{
+        display:flex;
+        align-items: center;
+    }
+}
+
+
+
+.contactSection p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow:hidden;
+}
+@media(min-width:450px){
+
+    .contactSection p{
+        display: flex;
+        margin-left: 2rem;
+    }
+} 
+
+.contactSection p span{
+    padding: 0 1rem;
+    font-weight: 600;
+    color: var(--black)
+}
+
+.contactSection span{
+    display:flex;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+.errorPage {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.errorPage h1{
+    margin-top: 10rem;
+    font-size: 3rem;
+    padding:0;
+}
+
+.errorPage h1::after{
+    transform: translateX(0)
+}
+
+.errorPage p {
+    color: var(--dark-red);
+    font-size: 1.5rem;
+    font-weight: 500;
+}

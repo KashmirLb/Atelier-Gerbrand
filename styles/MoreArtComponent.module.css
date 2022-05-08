@@ -1,0 +1,43 @@
+.background{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.background h1{
+    font-family: 'Julius Sans One';
+    padding-left: 10%;
+}
+@media(min-width:770px){
+    .background h1{
+        font-family: 'Julius Sans One';
+        padding-left: 4rem;
+        padding-top: 2rem;
+    }
+}
+
+.background h1::after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray);
+}
+@media(min-width:450px ){
+    .background h1::after{
+        width: 100%;  
+        transform: translateX(-2rem) translateY(5px); 
+    }
+}
+
+.background section{
+    height: fit-content;
+    min-height: 220px;
+    width: 100%;
+    margin-top:30px;
+}
+@media(max-width:450px){
+    .background section{
+        margin-top:50px;
+    }
+}

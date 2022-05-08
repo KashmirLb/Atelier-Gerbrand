@@ -1,0 +1,94 @@
+.bodypaintContainer{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+@media(min-width:770px){
+    .bodypaintContainer{
+        display:grid;
+        grid-template-columns: 3fr 2fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
+    }
+}
+
+.textContainer{
+ font-size: 1.3rem;
+ font-family: 'Montserrat';
+ margin-bottom:2rem;
+}
+@media(min-width:770px){
+    .textContainer{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+.textContainer p:first-of-type{
+    margin-bottom:5rem;
+    font-size: 1.5rem;
+    color: var(--dark-red);
+    text-align: inherit;
+}
+
+.textContainer p{
+    text-align: start;
+}
+
+.textContainer div{
+    display:inline-block;
+    width: fit-content;
+}
+
+.textContainer span{
+    color:var(--dark-red)
+}
+
+.textContainer a{
+    color:var(--white);
+    font-size:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: var(--black);
+    border-radius: 5px;
+    padding:1rem;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: .3s all ease-in-out;
+}
+
+.textContainer a:hover{
+    background-color:var(--dark-red)
+}
+
+@media(max-width:770px){
+    .imageContainer{
+        
+    }
+}
+
+.secondSection {
+    position:relative;
+    height: 200px;
+    width:  100%;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+@media(min-width:770px){
+    .secondSection {
+        grid-column: 2 / 3;
+        height: 300px;
+    }
+}
+
+.secondSection img {
+    padding-left: 2rem;
+    max-height: 100%;
+    max-width: 100%;
+}
+

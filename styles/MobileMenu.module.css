@@ -1,0 +1,93 @@
+.cover {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:4;
+}
+
+.menuWindow{
+    height: 100vh;
+    width:90vw;
+    position:fixed;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 2%, rgba(255, 255, 255, 0.98) 4%);
+    top:0;
+    right:0;
+    z-index:5;
+}
+
+.topBar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuWindow img{
+    margin-left:500px;
+}
+
+.menuWindow nav {
+    color: var(--gray);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr .1fr 1fr 1fr 1fr 1fr;
+    margin: 2rem;
+}
+
+.menuWindow nav a, .menuWindow nav div{
+    padding:1.2rem;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat'
+}
+
+.separator{
+    height: 5px;
+    margin: 0;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.separator::after{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray);
+    display:block;
+}
+
+.selected{
+    color:var(--red)
+}
+
+.mobileIcon{
+    position:absolute;
+    transform: scale(0);
+}
+@media(max-width:449px){
+
+    .mobileIcon{
+        position:fixed;
+        bottom: 1rem;
+        right: 1rem;
+        background-color: rgba(255, 255, 255, .7);
+        transform: scale(1);
+        border-radius: 10px;
+    }
+}
+
+.linkIcon{
+    opacity: 50%;
+}
+
+.closeButtonContainer {
+    position:fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 70px;
+    height: 70px;
+}
+
+.closeButton{
+    opacity: 60%;
+}

@@ -1,0 +1,53 @@
+.eroticContainer{
+    padding-top:1rem;
+    padding-bottom: 100px; 
+    background: radial-gradient(ellipse at top, rgb(190 0 0 / .2), rgb(0 0 0)),
+    radial-gradient(ellipse at bottom, rgb(190 0 0 / .2), rgb(0 0 0));
+}
+@media(min-width:770px){
+    .eroticContainer{
+        padding-top: 2rem;
+    }
+}
+
+.eroticContainer h1{    
+    color:var(--dark-red)
+}
+
+.eroticContainer h1::after{
+    background-color: var(--white);
+}
+
+.eroticContainer h2{    
+    font-family: 'Julius Sans One';
+    font-size: 1.5rem;
+    padding-left: 10%;
+    color:var(--dark-red)
+}
+@media(min-width:770px){
+    .eroticContainer h2{
+        padding-left:4rem;
+    }
+}
+
+.eroticContainer h2::after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+}
+@media(min-width:450px ){
+    .eroticContainer h2::after{
+        width: 100%;  
+        transform: translateX(-2rem) translateY(5px); 
+    }
+}
+
+.eroticList{
+    text-align: center;
+}
+
+.eroticContainer a{
+    color:var(--white)
+}
