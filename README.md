@@ -12,13 +12,13 @@ The rest of the code was written by the author.
 
 The project was completed in aproximately 1 month (part time).
 
-WARNING:
- - Site displays art pieces which might contain nudity.
- - The section More Art > Erotic Museum contains some explicit content.
-
  ## Result:
   - Domain is to be changed.
   - Text and pictures are to be updated by the owners.
+
+## WARNING:
+ - Site displays art pieces which might contain nudity.
+ - The section More Art > Erotic Museum contains some explicit content.
 
  https://g-atelier-dev.vercel.app/
 
