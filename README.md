@@ -1,3 +1,29 @@
+Project created with Next.js, Strapi, MongoDB and Cloudinary.
+
+Website for an contemporanean art studio: Atelier Gerbrand
+
+My first project written from scratch.
+    Used below imports:
+        https://swiperjs.com/swiper-api
+        https://formspree.io
+
+The rest of the code was written by the author.
+
+The project was completed in aproximately 1 month (part time).
+
+WARNING:
+ - Site displays art pieces which might contain nudity.
+ - The section More Art > Erotic Museum contains some explicit content.
+
+ Result (domain to be changed):
+
+ https://g-atelier-dev.vercel.app/
+
+
+
+
+Default NEXT.js documentation:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
