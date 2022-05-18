@@ -1,4 +1,4 @@
-Project created with Next.js, Strapi, MongoDB and Cloudinary.
+Project created with Next.js, CSS Modules, Strapi, MongoDB and Cloudinary.
 
 Website for an contemporanean art studio: Atelier Gerbrand
 
