@@ -13,16 +13,14 @@ The rest of the code was written from scratch by the author.
 The project was completed in aproximately 1 month (part time).
 
  ## Result:
-  - Domain is to be changed.
-  - Text and pictures are to be updated by the owners.
-
+ 
 *WARNING!*:
  - Site displays art pieces which might contain nudity.
  - The section More Art > Erotic Museum contains some explicit content.
 
 ## URL:
 
- https://ateliergerbrand.nl/
+ [https://ateliergerbrand.nl/](https://ateliergerbrand.nl/)
 
 
 
