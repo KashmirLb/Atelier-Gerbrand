@@ -8,7 +8,7 @@ Used below imports:
  - https://swiperjs.com/swiper-api
  - https://formspree.io
 
-The rest of the code was written by the author.
+The rest of the code was written from scratch by the author.
 
 The project was completed in aproximately 1 month (part time).
 
@@ -20,9 +20,9 @@ The project was completed in aproximately 1 month (part time).
  - Site displays art pieces which might contain nudity.
  - The section More Art > Erotic Museum contains some explicit content.
 
-URL:
+## URL:
 
- https://g-atelier-dev.vercel.app/
+ https://ateliergerbrand.nl/
 
 
 
